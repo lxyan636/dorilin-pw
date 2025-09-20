@@ -7,12 +7,13 @@ export const Home = () => {
             <div className="text-center z-10 px-4">
                 <img
                     src={homeSelfie}
-                    className="rounded-full h-80 w-80 mx-auto mb-4 object-cover border-3 border-[#8a5128]"
+                    className="rounded-full h-70 w-70 sm:h-80 sm:w-80 md:h-90
+                     md:w-90 lg:h-96 lg:w-96 mx-auto mb-4 object-cover border-3 border-[#8a5128]"
                 />
-                <h1 className="text-[#8a5128] text-5xl font md:text-4xl mb-6 hover:-translate-y-1 font-serif">
+                <h1 className="text-[#8a5128] text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 hover:-translate-y-1 font-serif">
                     Hi, I'm Dori!
                 </h1>
-                <p className="text-black-400 text-s mb-8 max-w-lg mx-auto font-sans">
+                <p className="text-black-400 text-sm sm:text-base md:text-lg mb-8 max-w-lg mx-auto font-sans">
                     I'm a current student at Northeastern University's class of 2028! Explore around to know more about me!
                 </p>
                 <div className="flex flex-col justify-center items-center space-y-4">

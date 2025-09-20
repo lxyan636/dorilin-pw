@@ -69,7 +69,7 @@ export const About = () => {
                         > ← </button>
 
                         <div className="flex gap-4">
-                            <div className="block md:hidden w-60 h-80 rounded-lg overflow-hidden shadow-lg">
+                            <div className="block md:hidden w-70 h-90 rounded-lg overflow-hidden shadow-lg">
                                 <img
                                     src={visibleImages[0]}
                                     alt="About Me"
@@ -80,7 +80,7 @@ export const About = () => {
                             {visibleImages.map((src, idx) => (
                                 <div
                                     key={idx}
-                                    className="hidden md:block w-40 h-40 md:w-60 md:h-80 rounded-lg overflow-hidden shadow-lg"
+                                    className="hidden md:block w-40 h-40 md:w-50 md:h-70 lg:w-70 lg:h-90 rounded-lg overflow-hidden shadow-lg"
                                 >
                                     <img
                                         src={src}
@@ -101,8 +101,21 @@ export const About = () => {
 
 
                     <p className="text-black mb-6">
-                        I'm Dori, a passionate student at Northeastern University pursuing a
-                        degree in Computer Science and Business Administration.
+                        I'm Dori, a student at Northeastern University pursuing a
+                        degree in Computer Science and Business Administration with a concentration
+                         in accounting. My expected date of graduation would be in May 2028, and
+                          I hope to pursue a CPA licensure in the near future so that I could
+                         work as a certified public accountant. 
+                    
+                    </p>
+                    <p className="text-black mb-6">
+                        I love drawing digitally,
+                          playing games, and crafting. Specifically, I love playing
+                           dressup, mobile, and architecture building games. However, I am also
+                           interested in animation, but have absolutely no experience--I hope to get
+                           Procreate Dreams some day. You can also look around in my little photo gallery above.
+                        These are some of my favorite memories of my family, friends, and myself! If you see me around,
+                          feel free to say hi to me!
                     </p>
 
                     <div className="flex flex-col space-y-4">
