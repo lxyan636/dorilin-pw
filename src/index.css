@@ -6,6 +6,7 @@ html, body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: #fbf6e0;
   color: #333;
+  overscroll-behavior: none;
 }
 
 @layer utilities {

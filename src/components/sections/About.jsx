@@ -69,7 +69,7 @@ export const About = () => {
                         > ← </button>
 
                         <div className="flex gap-4">
-                            <div className="block md:hidden w-70 h-90 rounded-lg overflow-hidden shadow-lg">
+                            <div className="block md:hidden w-100% h-100% rounded-lg overflow-hidden shadow-lg">
                                 <img
                                     src={visibleImages[0]}
                                     alt="About Me"
@@ -80,7 +80,7 @@ export const About = () => {
                             {visibleImages.map((src, idx) => (
                                 <div
                                     key={idx}
-                                    className="hidden md:block w-40 h-40 md:w-50 md:h-70 lg:w-70 lg:h-90 rounded-lg overflow-hidden shadow-lg"
+                                    className="hidden md:block w-100% h-100% md:w-50 md:h-70 lg:w-70 lg:h-90 rounded-lg overflow-hidden shadow-lg"
                                 >
                                     <img
                                         src={src}
