@@ -19,19 +19,19 @@ export const NavBar = ({menuOpen, setMenuOpen}) => {
                         &#9776; {/* Hamburger icon */}
                     </div>
                     <div className="hidden md:flex items-center space-x-6">
-                        <a href="#home" className="text-[#fbf6e0] hover:-translate-y-1 transition-colors">
+                        <a href="#home" className="text-[#fbf6e0] hover:scale-115 transition-colors">
                             {" "}
                             Home{" "}
                         </a>
-                        <a href="#about" className="text-[#fbf6e0] hover:-translate-y-1 transition-colors">
+                        <a href="#about" className="text-[#fbf6e0] hover:scale-115 transition-colors">
                             {" "}
                             About{" "}
                         </a>
-                        <a href="#projects" className="text-[#fbf6e0] hover:-translate-y-1 transition-colors">
+                        <a href="#projects" className="text-[#fbf6e0] hover:scale-115 transition-colors">
                             {" "}
                             Projects{" "}
                         </a>
-                        <a href="#contact" className="text-[#fbf6e0] hover:-translate-y-1 transition-colors">
+                        <a href="#contact" className="text-[#fbf6e0] hover:scale-115 transition-colors">
                             {" "}
                             Contact{" "}
                         </a>
