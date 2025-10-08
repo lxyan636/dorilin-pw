@@ -60,7 +60,7 @@ export const About = () => {
             className="min-h-screen flex flex-col justify-center items-center py-20 bg-[#D4D3B3] text-black px-4"
         >
             <RevealOnScroll>
-                <div className="max-w-80/100 mx-auto px-4 text-center">
+                <div className="max-w-80/100 mx-auto px-4 text-center mt-4">
                     <h2 className="text-5xl mb-3 text-[#8a5128]
               hover:-translate-y-1"> About Me </h2>
 

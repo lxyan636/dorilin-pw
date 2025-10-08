@@ -12,22 +12,37 @@ import "./index.css"
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}{" "}
-        <div 
-          className={'min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"} bg-white text-black-100'}>
-            <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            <Home />
-            <About />
-            <Projects />
-            <Contact />
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      <div
+        className={`min-h-screen transition-opacity duration-700 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        } bg-white text-black`}
+      >
+        <NavBar 
+          menuOpen={menuOpen} 
+          setMenuOpen={setMenuOpen} 
+          setActiveSection={setActiveSection} 
+        />
+        <MobileMenu 
+          menuOpen={menuOpen} 
+          setMenuOpen={setMenuOpen}
+          setActiveSection={setActiveSection}
+        />
+
+        {/* ✨ Fade animation wrapper */}
+        <div className="transition-all duration-700 ease-in-out">
+          {activeSection === "home" && <Home />}
+          {activeSection === "about" && <About />}
+          {activeSection === "projects" && <Projects />}
+          {activeSection === "contact" && <Contact />}
         </div>
+      </div>
     </>
   );
 }
 
-
-export default App
+export default App;
