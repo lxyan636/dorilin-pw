@@ -59,11 +59,11 @@ export const About = () => {
             id="about"
             className="min-h-screen flex flex-col justify-center items-center py-20 bg-[#D4D3B3] text-black px-4"
         >
-            <RevealOnScroll>
+            
                 <div className="max-w-80/100 mx-auto px-4 text-center mt-4">
-                    <h2 className="text-5xl mb-3 text-[#8a5128]
+                    <h2 className="text-5xl pt-8 pb-6 text-[#8a5128]
               hover:-translate-y-1"> About Me </h2>
-
+<RevealOnScroll>
                     <div className="flex items-center justify-center gap-4 mb-6">
                         <button
                             onClick={handlePrev}
@@ -107,7 +107,11 @@ export const About = () => {
                         degree in Computer Science and Business Administration with a concentration
                         in accounting. My expected date of graduation would be in May 2028, and
                         I hope to pursue a CPA licensure in the near future so that I could
-                        work as a certified public accountant.
+                        work as a certified public accountant. I will be able to graduate with over
+                        150 credits due to my participation in the Bridge Program at Dutchess Community College,
+                        allowing me to sit for the CPA exam earlier than expected. I also hope to
+                        take extra accounting elective courses to achieve 30 credits in accounting
+                        as required by most states for CPA licensure.
 
                     </p>
                     <p className="text-black mb-6">
@@ -228,8 +232,9 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
+                    </RevealOnScroll>
                 </div>
-            </RevealOnScroll>
+            
         </section>
     );
 };

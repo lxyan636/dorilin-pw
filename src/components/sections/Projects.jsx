@@ -8,20 +8,18 @@ export const Projects = () => {
     return (
         <section id="projects" className="min-h-screen flex items-center justify-center py-20 px-4 bg-[#D4D3B3]">
             <div className="max-w-6xl max-auto px-4 mt-4">
-                <RevealOnScroll>
                 <h2 className="text-5xl mt-10 mb-10 text-[#8a5128] text-center hover:-translate-y-1">
                     Projects
                 </h2>
-                </RevealOnScroll>
 
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                     
                     {/* PERSONAL WEBSITE PROJECT */}
                     <RevealOnScroll>
-                        <div className="p-6 rounded-xl border-t border-padding-2 pt-8 border-dotted">
+                        <div className="p-6 rounded-xl pt-8 border-dotted border-3 border-[#8D926F]/70 bg-white/20">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col items-center">
-                                    <img src={PW} className="w-sm h-auto mt-4 rounded-lg shadow-lg border-2 border-[#8D926F]/30" />
+                                    <img src={PW} className="w-sm h-auto mt-4 rounded-lg shadow-lg border-[#8D926F]/30" />
                                     <div className="mt-4 flex flex-wrap gap-2 justify-center">
                                         {["React", "TailwindCSS", "HTML", "CSS", "VSCode", "Procreate"].map((tech, key) => (
                                             <span key={key} className="bg-[#8D926F]/30 text-black/50 px-3 py-1 rounded-full text-sm hover:-translate-y-1 transition-all shadow-lg">
@@ -62,7 +60,7 @@ export const Projects = () => {
 
                     {/* MUSIC WORDLE PROJECT */}
                     <RevealOnScroll>
-                        <div className="p-6 rounded-xl border-t border-padding-2 pt-8 border-dotted">
+                        <div className="p-6 rounded-xl pt-8 border-dotted border-3 border-[#8D926F]/70 bg-[#8D926F]/30">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col justify-center">
                                     <h3 className="text-2xl font-bold mb-2 font-serif text-center animate-[bounce_2s_infinite]">
@@ -105,7 +103,7 @@ export const Projects = () => {
 
                     {/* CAPSTONE PROJECT */}
                     <RevealOnScroll>
-                        <div className="p-6 rounded-xl border-t border-padding-2 pt-8 border-dotted">
+                        <div className="p-6 rounded-xl pt-8 border-dotted border-3 border-[#8D926F]/70  bg-white/20">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="flex flex-col items-center">
                                     <img src={LBW} className="w-80 h-auto mt-4 rounded-lg shadow-lg border-2 border-[#8D926F]/30" />
@@ -139,7 +137,7 @@ export const Projects = () => {
 
                     {/* OTHER COURSEWORK PROJECTS */}
                     <RevealOnScroll>
-                        <div className="p-6 rounded-xl transition-all border-t border-padding-2 pt-8 border-dotted">
+                        <div className="p-6 rounded-xl transition-all border-t border-padding-2 pt-8 border-dotted bg-[#8D926F]/30">
                             <h3 className="text-2xl font-serif mb-4 font-sans font-bold text-center animate-[bounce_2s_infinite]">
                                 Other Coursework Projects... 
                             </h3>

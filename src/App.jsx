@@ -35,10 +35,10 @@ function App() {
 
         {/* ✨ Fade animation wrapper */}
         <div className="transition-all duration-700 ease-in-out">
-          {activeSection === "home" && <Home />}
-          {activeSection === "about" && <About />}
-          {activeSection === "projects" && <Projects />}
-          {activeSection === "contact" && <Contact />}
+          {activeSection === "home" && <Home setActiveSection={setActiveSection} />}
+          {activeSection === "about" && <About setActiveSection={setActiveSection} />}
+          {activeSection === "projects" && <Projects setActiveSection={setActiveSection} />}
+          {activeSection === "contact" && <Contact setActiveSection={setActiveSection} />}
         </div>
       </div>
     </>
